@@ -1,0 +1,105 @@
+* {
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+
+body {
+    height:100vh;
+    background-image:url(assets/images/Fundo_img.png);
+    background-size:cover;
+    background-position:center;
+}
+
+.row {
+    gap:50px;
+    position: relative;top:50px;
+}
+
+.data {
+    background-color:rgba(0, 0, 0, 0.16);
+    color:white;
+    height:500px;
+    margin-left: 50px;
+    margin-left: 50px;
+    border-radius: 20px;
+    border:1px solid white;
+}
+
+.info {
+    background-color:rgba(0, 0, 0, 0.16);
+    color:white;
+    height:500px;
+    border-radius: 20px;
+    border:1px solid white;
+}
+
+fieldset {
+    border:none;
+}
+
+input {
+    width:300px;
+    margin-bottom: 15px;
+    margin-top:15px;
+    background-color: transparent;
+    border:1px solid white;
+    height:25px;
+    color:white;
+    padding:18px;
+    font-size:15px;
+}
+
+input::placeholder {
+    color:white
+}
+
+p {
+    text-align: center;
+    position:relative;top:80px;
+    font-size:15px;
+    color:white;
+}
+
+h6 {
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size:20px;
+    text-align:left;
+}
+
+button {
+    height:30px;
+    margin-top:20px;
+    background-color: white;
+    border:none;
+    color:#B5CBE0;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 10px 0px #B5CBE0;
+    border:1px solid #B5CBE0;
+    width:100px;
+}
+
+button:hover {
+    background-color: #B5CBE0;
+    color:white;
+    box-shadow:0px 0px 0px #B5CBE0;
+    transform:translateY(10px);
+    border:5px solid #B5CBE0;
+}
+
+.wait {
+    text-align: justify;
+    font-size:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+h1 {
+    font-size:15px;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
