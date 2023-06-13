@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="code.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <title>Calculadora IMC</title>
 </head>
 <body>
@@ -12,12 +13,15 @@
         <div class="row d-flex justify-content-center">
             <div class="col-5 data d-flex align-items-center justify-content-center">
                 <fieldset class="d-flex flex-column">
-                    Nome
-                    <input type="text" class="name" required placeholder="Ex: João Silva">
+                    <h3>Calcule o seu IMC.</h3>
+                    <h7>Também conhecido como Índice de Massa Corporal, o IMC é uma fórmula 
+                        utilizada por vários profissionais de saúde, incluindo médicos,
+                         enfermeiros e nutricionistas, para saber, de uma forma 
+                         rápida, se a pessoa precisa ganhar ou perder peso.</h7>
                     Peso
-                    <input type="text" class="weight" required placeholder="KG">
+                    <input type="text" class="weight" required placeholder="Digite o seu peso EX: 65,35 (em Kg)">
                     Altura
-                    <input type="text" class="height" required placeholder="Metros">
+                    <input type="text" class="height" required placeholder="Digite a sua altura EX: 1,5 (em métros)">
                     <button class="submit" onclick="calculoImc()">Enviar dados</button>
                 </fieldset>
             </div>
