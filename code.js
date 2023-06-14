@@ -59,11 +59,15 @@ function IMC() {
     let weight_calc = weight.value;
     let height_calc = height.value;
 
+    weight_calc = weight_calc.replace(',','.');
+    height_calc = height_calc.replace(',','.');
+
     let convertHeight= parseFloat(height_calc);
     let convertWeight = parseFloat(weight_calc);
 
     /*Calculo IMC*/
     let calcImc=(convertWeight/(convertHeight*convertHeight));
+    calcImc = calcImc.toFixed(2);
 
     if (calcImc>0 && calcImc<=18.5) {
         presentation.innerHTML=`<div class="result">
@@ -71,46 +75,56 @@ function IMC() {
                                         <img src="assets/images/blue.png"></img>
                                         <h3 class="text-center">Magreza</h3>
                                         <h7>IMC está entre 0 e 18,5</h7>
+                                        <h7>Seu IMC é dê <strong>${calcImc}</strong></h7>
                                     </div>
                                 </div>`
         h1.innerHTML="";
         info.style.backgroundColor="#387C99";
         }
 
-    if (calcImc>18.5 && calcImc<=24.9) {
+    else if (calcImc>18.5 && calcImc<=24.9) {
         presentation.innerHTML=`<div class="result">
                                     <div class="result_intern d-flex flex-column">
                                         <img src="assets/images/green.png"></img>
                                         <h3 class="text-center">Normal</h3>
                                         <h7>IMC está entre 18,5 e 24,9</h7>
+                                        <h7>Seu IMC é dê <strong>${calcImc}</strong></h7>
                                     </div>
                                 </div>`
         h1.innerHTML="";
         info.style.backgroundColor="#17C671";
         }
 
-    if (calcImc>24.9 && calcImc<=30) {
+    else if (calcImc>24.9 && calcImc<=30) {
         presentation.innerHTML=`<div class="result">
                                     <div class="result_intern d-flex flex-column">
                                         <img src="assets/images/yellow.png"></img>
                                         <h3 class="text-center">Sobrepeso</h3>
                                         <h7>IMC está entre 24,9 e 30</h7>
+                                        <h7>Seu IMC é dê <strong>${calcImc}</strong></h7>
                                         </div>
                                     </div>`
         h1.innerHTML="";
         info.style.backgroundColor = "#FFD426";
         }  
-    if (calcImc>30 && calcImc<=99) {
+        
+    else if (calcImc>30 && calcImc<=99) {
         presentation.innerHTML=`<div class="result">
                                     <div class="result_intern d-flex flex-column">
                                         <img src="assets/images/red.png"></img>
                                         <h3 class="text-center">Sobrepeso</h3>
                                         <h7>IMC está entre 30 e 99</h7>
+                                        <h7><strong>Seu IMC é dê ${calcImc}</strong></h7>
                                         </div>
-                                        </div>`
+                                    </div>`
             h1.innerHTML="";
             info.style.backgroundColor = "#FF2F38";
             }  
 
+
+}
+
+function back() {
+    location.reload();
 
 }

@@ -21,12 +21,17 @@
                     Peso
                     <input type="text" class="weight" required placeholder="Digite o seu peso EX: 65,35 (em Kg)">
                     Altura
-                    <input type="text" class="height" required placeholder="Digite a sua altura EX: 1,5 (em métros)">
+                    <input type="text" class="height" required placeholder="Digite a sua altura EX: 1,54 (em métros)">
                     <button class="submit" onclick="calculoImc()">Enviar dados</button>
                 </fieldset>
             </div>
             <div class="col-5 info d-flex align-items-center">
                 <div class="exit">
+                    <div class="return">
+                        <button class="icone" onclick="back()">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </button>
+                        </div>
                     <h6>Conheça o seu corpo, cuide da sua saúde! Com a Calculadora de IMC, 
                         descubra se seu peso está saudável de forma fácil e rápida. 
                         Receba dicas personalizadas e acompanhe seu progresso ! </h6>
@@ -34,31 +39,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer>
             <p>Copywright ® 2023 All rights reserved This project he has created by João Vitor Da Silva Pinto</p>
         </footer>
@@ -66,5 +46,7 @@
 
     <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="code.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
